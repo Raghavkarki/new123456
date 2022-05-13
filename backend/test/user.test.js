@@ -12,13 +12,13 @@ afterAll(async()=>{
 })
 
 //register testing
-describe(' testanything', ()=>{
-    it('testinganything', ()=>{
+describe(' User Registration testing ', ()=>{
+    it('User Registration testing ', ()=>{
         const userTest={
             name: "raghav",
             email:"raghav@gmail.com",
             password:"raghav123",
-            avatar:"Hero",            
+            avatar:"Hero.png",            
         }
         return test.create(userTest).then((pro_ret)=>{
             expect(pro_ret.name).toEqual("raghav")
